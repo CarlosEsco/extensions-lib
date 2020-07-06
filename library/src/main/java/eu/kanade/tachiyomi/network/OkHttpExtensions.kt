@@ -11,3 +11,7 @@ fun Call.asObservable(): Observable<Response> {
 fun Call.asObservableSuccess(): Observable<Response> {
     throw Exception("Stub!")
 }
+
+fun OkHttpClient.newCallWithProgress(request: Request, listener: ProgressListener): Call {
+   throw Exception("Stub!")   
+}
