@@ -9,4 +9,8 @@ class Page(
         val url: String = "",
         var imageUrl: String? = null,
         var uri: Uri? = null
-) : ProgressListener
+) : ProgressListener{
+        
+  override fun update(bytesRead: Long, contentLength: Long, done: Boolean) {
+    }       
+}
